@@ -2,7 +2,10 @@
 
 This is a very common tech test as it demonstrates a candidate's knowledge of basic data structures.
 
-## Standard Acceptance Criteria
+
+## Acceptance Criteria
+
+### Standard
 
 The rules of tic-tac-toe are as follows:
 
@@ -14,5 +17,5 @@ The rules of tic-tac-toe are as follows:
 
 Build the **business logic** for a game of tic tac toe with two human players - not a user interface. Your implementation should be able to be extended by combining your code with any user interface, whether web or command line.
 
-## Extended Acceptance Criteria
+### Extended
 * Extend the game by supporting a human v computer. The requirement here is that the computer player can never lose - but can draw or win.
