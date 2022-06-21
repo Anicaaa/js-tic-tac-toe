@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-board {
+    height: 450px;
+    width: 450px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    background-color: yellow;
+}
+
+.cell {
+    height: 150px;
+    width: 150px;
+    font-size: 150px;
+}
+
+.game-reset-btn {
+    padding: 10px 20px;
+    background-color: yellow;
+    border-radius: 10px;
+    color: grey;
+    border-color: yellow;
+    font-size: 25px;
+}
