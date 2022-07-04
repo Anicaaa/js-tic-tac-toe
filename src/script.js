@@ -20,7 +20,11 @@ function handleCellPlayed(clickedCell, clickedCellIndex) {
 }
 
 function handlePlayerChange() {
-  currentPlayer = currentPlayer === playerX ? playerO : playerX;
+  if (currentPlayer === "X") {
+    return (currentPlayer = "O");
+  } else if (currentPlayer === "O") {
+    return (currentPlayer = "X");
+  }
   statusDisplay.innerHTML = currentPlayerTurn();
 }
 
@@ -68,6 +72,7 @@ function handleCellClick(clickedCellEvent) {
   }
   handleCellPlayed(clickedCell, clickedCellIndex);
   handleResultValidation();
+  handlePlayerChange();
 }
 
 function handleRestartGame() {
